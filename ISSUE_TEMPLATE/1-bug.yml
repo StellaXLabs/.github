@@ -1,0 +1,76 @@
+# For more information about the order of templates, see
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#changing-the-order-of-templates
+# For all available issue template keys, see
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms#top-level-syntax
+
+name: Bug Report
+description: Report a reproducible defect in the system
+title: 'bug: '
+labels: ['bug']
+assignees: []
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Please describe what the bug is.
+      placeholder: Describe the bug clearly here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide step-by-step instructions.
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: environment
+    attributes:
+      label: Environment
+      description: Select all environments where this issue occurs.
+      options:
+        - label: Web - Chrome
+        - label: Web - Edge
+        - label: Web - Firefox
+        - label: Web - Safari
+        - label: iOS
+        - label: Android
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version Details
+      description: Specify exact browser and app version.
+      placeholder: Chrome 122.0.0 / iOS 17.3 / App v1.2.0
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How critical is this issue?
+      options:
+        - Low (Minor UI issue)
+        - Medium (Functional issue, workaround exists)
+        - High (Core feature broken, no workaround)
+        - Critical (System unusable / data loss)
+    validations:
+      required: true
