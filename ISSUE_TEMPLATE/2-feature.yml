@@ -1,0 +1,50 @@
+# For more information about the order of templates, see
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#changing-the-order-of-templates
+# For all available issue template keys, see
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms#top-level-syntax
+
+name: Feature Request
+description: Suggest a new feature for the application
+title: 'feature: '
+labels: ['feature']
+assignees: []
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Clearly describe the proposed feature.
+      placeholder: Describe the new feature here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Problem
+      description: Explain why this feature would be useful or needed.
+      placeholder: What problem does this solve? What is the business impact?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: Describe how the system should behave once implemented.
+      placeholder: Define clear expected outcomes or acceptance criteria.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Low (Nice to have)
+        - Medium (Improves workflow)
+        - High (Important for upcoming milestone)
+        - Critical (Blocks release or core workflow)
+    validations:
+      required: true
