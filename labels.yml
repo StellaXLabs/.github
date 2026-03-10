@@ -1,0 +1,7 @@
+- name: dependencies
+  description: Dependency updates
+  color: '97E395'
+
+- name: feature
+  description: New functionality to be added
+  color: '1D76DB'
