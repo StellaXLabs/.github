@@ -20,3 +20,7 @@ An all-in-one rental management platform that enables landlords and tenants to m
 ## 📫 Contact
 
 For inquiries, collaboration or partnerships, please reach out via [jasontan20030829@gmail.com](mailto:jasontan20030829@gmail.com).
+
+### Activity
+
+Last Updated: <!--LAST_UPDATED--> 2026-05-01
