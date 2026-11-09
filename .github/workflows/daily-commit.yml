@@ -27,7 +27,7 @@ jobs:
       - name: Commit and push
         run: |
           git config --global user.name "Jason3002"
-          git config --global user.email "fsv96ss65p@privaterelay.appleid.com"
+          git config --global user.email "jasontan20030829@gmail.com"
 
           git add profile/README.md
           git commit -m "chore: update profile timestamp" || exit 0
